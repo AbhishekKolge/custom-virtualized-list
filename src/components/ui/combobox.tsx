@@ -68,7 +68,7 @@ const Combobox: React.FC<ComboBoxProps> = (props) => {
       <PopoverTrigger asChild>
         <Button
           variant='outline'
-          className='flex m-auto justify-between w-[150px]'
+          className='flex m-auto justify-between min-w-[150px]'
         >
           {selectedValue || 'Select Word'}
           <CaretSortIcon className='ml-2 h-4 w-4 shrink-0 opacity-50' />
