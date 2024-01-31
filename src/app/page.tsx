@@ -3,10 +3,7 @@ import Combobox from '@/components/ui/combobox';
 import { Dictionary } from '@/types';
 
 const getDictionary = async (): Promise<Dictionary> => {
-  const data = await fetch(
-    'https://raw.githubusercontent.com/dwyl/english-words/master/words_alpha.txt',
-    { cache: 'no-store' }
-  );
+  const data = await fetch(`${process.env.BASE_URL}`, { cache: 'no-store' });
   const text = await data.text();
   const words = text.split('\r\n');
   words.pop();
