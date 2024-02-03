@@ -13,7 +13,7 @@ if (process.env.ENV !== 'development') {
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'FULFLLD | Virtualized List',
+  title: 'Virtualized List',
   description: 'Virtualized list example without using external library',
 };
 
